@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.MainGameController"
+            prefHeight="400.0" prefWidth="1000.0">
+
+    <children>
+        <ImageView fitHeight="500" fitWidth="500" layoutX="300"  >
+            <image>
+                <Image url="@Snakeladder.jpg"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="50" fitWidth="30" layoutX="50" layoutY="200">
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+        <Text layoutY="230" layoutX="90" text="Player 1"></Text>
+        <Text fx:id="dicePrint1" layoutY="230" layoutX="160" ></Text>
+        <Text fx:id="changeTurn" layoutX="190" layoutY="230" text="P 1's turn"></Text>
+
+        <ImageView fitHeight="50" fitWidth="30" layoutX="50" layoutY="280">
+            <image>
+                <Image url="@blue.png"/>
+            </image>
+        </ImageView>
+        <Text layoutY="310" layoutX="90" text="Player 2"></Text>
+        <Text fx:id="dicePrint2" layoutY="310" layoutX="160" ></Text>
+        <Text fx:id="changeTurn2" layoutX="190" layoutY="310" text=" "></Text>
+
+
+        <ImageView fx:id="player1" fitHeight="30" fitWidth="20" layoutX="275" layoutY="455">
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player2" fitHeight="30" fitWidth="20" layoutX="250" layoutY="455">
+            <image>
+                <Image url="@blue.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="60" fitWidth="60" layoutX="200" layoutY="100" onMouseClicked="#dice">
+            <image>
+                <Image url="@diceimg.jpg"/>
+            </image>
+        </ImageView>
+
+
+
+
+
+
+    </children>
+
+</AnchorPane>
